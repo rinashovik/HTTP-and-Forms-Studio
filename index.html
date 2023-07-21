@@ -4,16 +4,48 @@
 	<meta charset="utf-8">
 	<script>
 		// TODO: create a handler
+		function setSearchEngine(){
+event.preventDefault();
+console.log("Hello");
+
+		};
+
+
     window.addEventListener("load", function(){
+		
         // TODO: register the handler
+		
+
+		let formElement = document.getElementById ("searchForm");
+			console.log(formElement.engine);
+
+		//formElement.addEventListener ("submit", setSearchEngine(event)
+				
+
+			
+
+		//});
+		
     });
 	</script>
 </head>
 
 <body>
 
-	<form id="searchForm">
+	<form id="searchForm" action="https://www.google.com/search">
     <!-- TODO: add form elements -->
+
+    <label><input name="q" type="text"/> </label>
+    <label><input name="engine" type="radio" value="google"/>Google </label>
+		<!-- TODO: add form elements -->
+
+		<label><input name="engine" type="radio" value="duckDuckGo"/> DuckDuckGo</label>
+		<label><input name="engine" type="radio" value="=bing"/>Bing </label>
+		<label><input name="engine" type="radio" value="ask"/>Ask </label>
+		<button>Go!</button>
+
+		</form>
+
 	</form>
 
 </body>
